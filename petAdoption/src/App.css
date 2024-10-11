@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.font-robotic {
+    font-family: 'Orbitron', sans-serif;
+  }
+
+.font-acadFlux{
+  font-family: "Afacad Flux", sans-serif;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.sprayed-purple {
+  background-image: linear-gradient(to bottom right, #8e44ad, #c0392b);
+  background-size: 200% 200%;
+  animation: spray 4s infinite;
+}
+
+@keyframes spray {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
