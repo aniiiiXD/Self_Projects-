@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="output.css" >
+</head>
+<body class="bg-gray-50">
+    <div class="flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-100 to-gray-200">
+        <div class="relative flex flex-col space-y-8 bg-white shadow-2xl rounded-2xl md:flex-row md:space-y-0 max-w-4xl w-full mx-4">
+            <!-- Login Form -->
+            <div class="flex flex-col justify-center p-8 md:p-14 md:w-2/3">
+                <div class="mb-8">
+                    <h1 class="text-4xl font-bold text-red-600 mb-2">Welcome Back</h1>
+                    <p class="text-gray-500">Please enter your credentials to continue</p>
+                </div>
+
+                <form id="login-form" class="space-y-6">
+                    <div class="space-y-2">
+                        <label for="login-email" class="text-sm font-medium text-gray-700">Email Address</label>
+                        <div class="relative">
+                            <input 
+                                type="email" 
+                                id="login-email" 
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition duration-200 ease-in-out"
+                                placeholder="john@example.com"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label for="login-password" class="text-sm font-medium text-gray-700">Password</label>
+                        <div class="relative">
+                            <input 
+                                type="password" 
+                                id="login-password" 
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent transition duration-200 ease-in-out"
+                                placeholder="••••••••"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <input 
+                                type="checkbox" 
+                                id="remember-me" 
+                                class="h-4 w-4 text-red-600 focus:ring-red-500 border-gray-300 rounded"
+                            >
+                            <label for="remember-me" class="ml-2 block text-sm text-gray-700">
+                                Remember me for 30 days
+                            </label>
+                        </div>
+                        <div class="text-sm">
+                            <a href="#" class="font-medium text-red-600 hover:text-red-500">
+                                Forgot password?
+                            </a>
+                        </div>
+                    </div>
+
+                    <button 
+                        type="submit"
+                        class="w-full py-3 px-4 bg-red-600 text-white font-medium rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition duration-200 ease-in-out"
+                    >
+                        Sign in
+                    </button>
+
+                    <div id="login-message" class="text-center text-sm"></div>
+
+                    <div class="text-center text-gray-500 text-sm">
+                        Don't have an account?
+                        <a href="signup.html" class="text-red-600 font-medium hover:text-red-700">Sign up</a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Image Section -->
+            <div class="relative hidden md:block md:w-1/3">
+                <!-- Background Gradient Overlay with Image -->
+                <div class="absolute inset-0 bg-gradient-to-br from-red-500 to-red-600 rounded-r-2xl overflow-hidden">
+                    <div class="flex flex-col justify-center items-center h-full p-8 text-center text-white"
+                        style="background-image: url('./istockphoto-1470544060-612x612.jpg'); background-size: cover; background-position: center;">
+                        
+                        <!-- Semi-transparent overlay to enhance text visibility -->
+                        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+                        
+                        <!-- Content with relative positioning to sit above the overlay -->
+                        <div class="relative z-10">
+                            <h2 class="text-4xl font-bold mb-4">Hello, Friend!</h2>
+                            <p class="text-lg leading-relaxed">
+                                Enter your personal details and start your journey with us today.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="../scripts/login.js">
+
+        
+    </script>
+</body>
+</html>

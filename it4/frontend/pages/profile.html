@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BPrep - Profile</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-gray-100">
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+        <div class="loading-spinner border-4 border-gray-200 border-t-red-600 w-10 h-10 rounded-full animate-spin"></div>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification"
+        class="fixed top-4 right-4 px-4 py-2 bg-gray-700 text-white rounded-md transform transition-transform duration-300 translate-x-full z-40">
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 flex justify-between items-center h-16">
+            <a href="../base.html" class="text-2xl font-bold text-red-600">BPrep</a>
+            <div class="flex space-x-4">
+
+                <a href="../base.html" class="nav-link px-3 py-2 text-gray-700 hover:text-red-600">Home</a>
+                <!-- <a href="./mentorship.html" class="nav-link px-3 py-2 text-gray-700 hover:text-red-600">Mentorship</a>
+                <a href="./tips.html" class="nav-link px-3 py-2 text-gray-700 hover:text-red-600">Tips & Tricks</a> -->
+                <button onclick="logout()"
+                    class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition-colors">
+                    Logout
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto flex mt-6">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white shadow-md p-6">
+            <nav>
+                <a href="profile.html" class="block px-4 py-3 hover:bg-red-50 transition">Profile</a>
+                <a href="interview.html" class="block px-4 py-3 hover:bg-red-50 transition">Interview Questions</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-8">
+            <section class="bg-white rounded-lg shadow-md p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl font-semibold text-gray-800">Profile Details</h2>
+                    <div>
+                        <button id="editProfileBtn"
+                            class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition-colors">
+                            Edit Profile
+                        </button>
+                        <button id="saveProfileBtn"
+                            class="hidden bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition-colors">
+                            Save Profile
+                        </button>
+                    </div>
+                </div>
+
+                <form id="profileForm" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-2">
+                        <label class="block text-sm font-medium text-gray-700">Full Name</label>
+                        <input type="text" name="fullName" class="w-full px-3 py-2 border border-gray-300 rounded-md"
+                            disabled required>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="block text-sm font-medium text-gray-700">Phone Number</label>
+                        <input type="tel" name="phoneNumber" class="w-full px-3 py-2 border border-gray-300 rounded-md"
+                            disabled>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="block text-sm font-medium text-gray-700">CAT Score</label>
+                        <input type="number" name="CATscore" class="w-full px-3 py-2 border border-gray-300 rounded-md"
+                            disabled>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="block text-sm font-medium text-gray-700">Grad School</label>
+                        <input type="text" name="gradSchool" class="w-full px-3 py-2 border border-gray-300 rounded-md"
+                            disabled>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="../scripts/profile.js"></script>
+</body>
+
+</html>
