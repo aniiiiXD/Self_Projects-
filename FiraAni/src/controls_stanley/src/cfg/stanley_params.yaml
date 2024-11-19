@@ -1,0 +1,4 @@
+k: 0.4
+k_soft: 0.1
+steer_bound: 30
+loop_rate: 20

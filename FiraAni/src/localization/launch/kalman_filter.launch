@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find sparton_ahrs8_driver)/launch/ahrs-8.launch"></include>
+    <rosparam file="$(find localization)/config/kf_params.yaml" />
+    <node pkg="localization" name="fusion_node" type="imu_encoderv2" output="screen"/>
+</launch> 

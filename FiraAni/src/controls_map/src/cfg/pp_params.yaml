@@ -1,0 +1,74 @@
+##############from 7/7
+# m: 1.6
+# q: 0.1
+# t_clip_max: 5
+# t_clip_min: 0
+# wheelbase: 0.265
+# loop_rate: 20
+# steer_bound: 50
+# agression_1: 2.3
+# agression_2: 2.0
+# agression_3: 1.8
+# # agression_1: 1.0
+# # agression_2: 1.0
+# # agression_3: 2.0
+# velocity_boost: -1
+# steer_threshold_1: 10.0
+# steer_threshold_2: 20.0
+#                 _______
+#
+#                /
+#               /
+#              /
+#  ___________/
+# m: 2.4
+# q: 0.01
+# t_clip_max: 5
+# t_clip_min: 0
+# wheelbase: 0.265
+# loop_rate: 10
+# steer_bound: 50
+# agression_0: 1.2
+# agression_1: 1.9
+# agression_2: 1.9
+# agression_3: 2.7
+# velocity_boost: -1
+# steer_threshold_0: 5
+# steer_threshold_1: 20.0
+# steer_threshold_2: 27.0
+
+MEAN_OFFSET: 0
+m: 1.6
+q: 0.1
+t_clip_max: 5
+t_clip_min: 0
+wheelbase: 0.265
+loop_rate: 10
+steer_bound: 35 # 20
+
+#agression_0: 1.2
+#agression_1: 2.3
+#agression_2: 2.0
+#agression_3: 1.8
+
+#agression_0: 1.8
+#agression_1: 3.45
+#agression_2: 3.0
+#agression_3: 2.7
+
+
+agression_0: 1.0 #2.0625 #2.26875 # WORKING ON CURVES
+agression_1: 3.0 #2.03125 #4.3484375
+agression_2: 4.5 #78125
+agression_3: 4.5 #3.403125
+
+# agression_0: 1.8
+# agression_1: 3.45
+# agression_2: 3
+# agression_3: 2.7
+
+vel_real: 0.1
+velocity_boost: -1
+steer_threshold_0: 0.5
+steer_threshold_1: 4.0 #20.0
+steer_threshold_2: 10 #27.0

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20240614-1514-Experimental"
+	Name="umic-MS-7B48"
+	Generator="ctest-3.16.3"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="9.4.0"
+	OSName="Linux"
+	Hostname="umic-MS-7B48"
+	OSRelease="5.15.0-107-generic"
+	OSVersion="#117~20.04.1-Ubuntu SMP Tue Apr 30 10:35:57 UTC 2024"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="158"
+	ProcessorCacheSize="12288"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="97654"
+	TotalPhysicalMemory="64246"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="4300"
+	>
+	<Testing>
+		<StartDateTime>Jun 14 20:50 IST</StartDateTime>
+		<StartTestTime>1718378438</StartTestTime>
+		<TestList/>
+		<EndDateTime>Jun 14 20:50 IST</EndDateTime>
+		<EndTestTime>1718378438</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

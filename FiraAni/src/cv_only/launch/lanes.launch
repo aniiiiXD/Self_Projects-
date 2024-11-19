@@ -1,0 +1,6 @@
+<launch>
+    <rosparam file="$(find cv_only)/config/sliding_window_params.yaml" />
+    <node pkg="cv_only" type="lanes_final" name="SlidingWindow" />
+    <!-- <node pkg="cv_only" type="sliding_window_final5.py" name="SlidingWindow" output="screen" /> -->
+    <!-- <node pkg="cv_only" type="convert" name="occ_grid" output="screen" /> --> 
+</launch>

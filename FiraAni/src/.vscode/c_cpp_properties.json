@@ -1,0 +1,44 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/sedrica/ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/sedrica/catkin_ws/devel/include/**",
+        "/home/sedrica/catkin_ws/src/FIRA-Autonomous-Cars-Simulator/can_sim_tc/include/**",
+        "/home/sedrica/catkin_ws/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/catvehicle/include/**",
+        "/home/sedrica/catkin_ws/src/FIRA-Autonomous-Cars-Simulator/catvehicle_basics/control_toolbox/include/**",
+        "/home/sedrica/ws/src/controls_map/include/**",
+        "/home/sedrica/ws/src/controls_stanley/include/**",
+        "/home/sedrica/ws/src/cv_only/include/**",
+        "/home/sedrica/catkin_ws/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_msg_filters/include/**",
+        "/home/sedrica/catkin_ws/src/FIRA-Autonomous-Cars-Simulator/dataspeed_can/dataspeed_can_usb/include/**",
+        "/home/sedrica/catkin_ws/src/FIRA-Autonomous-Cars-Simulator/dbw_mkz_ros/dbw_mkz_can/include/**",
+        "/home/sedrica/catkin_ws/src/ddynamic_reconfigure/include/**",
+        "/home/sedrica/ws/src/decision_making/include/**",
+        "/home/sedrica/ws/src/dwa_planner/include/**",
+        "/home/sedrica/ws/src/fira/include/**",
+        "/home/sedrica/ws/src/goal_mark/include/**",
+        "/home/sedrica/ws/src/lane_extract/include/**",
+        "/home/sedrica/catkin_ws/src/FIRA-Autonomous-Cars-Simulator/lusb/include/**",
+        "/home/sedrica/ws/src/mechatronics/include/**",
+        "/home/sedrica/catkin_ws/src/realsense-ros/realsense2_camera/include/**",
+        "/home/sedrica/ws/src/rosserial/rosserial_server/include/**",
+        "/home/sedrica/ws/src/rosserial/rosserial_test/include/**",
+        "/home/sedrica/catkin_ws/src/FIRA-Autonomous-Cars-Simulator/sicktoolbox/include/**",
+        "/home/sedrica/ws/src/signs/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

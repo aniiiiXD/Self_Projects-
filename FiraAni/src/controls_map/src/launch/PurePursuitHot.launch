@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="controls_map" name="controls_node" type="PurePursuitHot" output="screen">
+    <rosparam command="load" file="$(find controls_map)/src/cfg/pp_params.yaml"/>
+  </node>
+</launch>

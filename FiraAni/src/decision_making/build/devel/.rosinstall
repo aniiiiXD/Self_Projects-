@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ani/catkin_ws/src/decision_making/build/devel/setup.sh

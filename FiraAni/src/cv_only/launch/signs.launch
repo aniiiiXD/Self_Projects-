@@ -1,0 +1,5 @@
+<launch>
+	<rosparam file="$(find cv_only)/config/signs_params.yaml" />
+	<node pkg="cv_only" type="april_tags.py" name="apriltag_detector"/>
+	<!-- <node pkg="cv_only" type="signs_depth_align_new_sahil.py" name="image_processor_node"/> -->
+</launch>

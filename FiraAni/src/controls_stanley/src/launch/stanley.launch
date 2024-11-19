@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="controls_stanley" name="controls_node_stanley" type="stanley.py" output="screen">
+    <rosparam command="load" file="$(find controls_stanley)/src/cfg/stanley_params.yaml"/>
+  </node>
+</launch>

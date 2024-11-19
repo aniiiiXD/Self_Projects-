@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="decision_making" name="dm_node" type="goal_mark_server_fira.py" output="screen">
+    <rosparam command="load" file="$(find decision_making)/src/cfg/dm.yaml"/>
+  </node>
+ 
+</launch>
+

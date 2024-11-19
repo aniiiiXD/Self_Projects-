@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="controls_mpcc" name="controls_node" type="mpcc.py" output="screen">
+    <rosparam command="load" file="$(find controls_mpcc)/src/cfg/mpcc_params.yaml"/>
+  </node>
+</launch>
+

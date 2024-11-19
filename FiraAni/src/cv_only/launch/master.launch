@@ -1,0 +1,21 @@
+<launch>
+
+    <include file="$(find localization)/launch/kalman_filter.launch"></include>
+    <include file="$(find realsense2_camera)/launch/rs_rgbd.launch"></include>
+
+    <include file="$(find decision_making)/src/launch/dm_node.launch"></include>
+    <node pkg="decision_making" type="dm_server.py" name="states_node" output="screen" />
+
+    <include file="$(find cv_only)/launch/lanes.launch"></include>
+    <node pkg="cv_only" type="stopline" name="Stopline"/>
+    <node pkg="cv_only" type="convert" name="occ_grid"/> 
+    <include file="$(find cv_only)/launch/signs.launch"></include>
+
+    <include file="$(find controls_map)/src/launch/PurePursuit.launch"></include>
+    <node pkg="controls_map" type="latency_tapper.py" name="teleop_twist_keyboard" output="screen"/>
+
+    <include file="$(find dwa_planner)/launch/local_planner.launch"></include>
+
+    <node pkg="rosserial_arduino" type="serial_node.py" name="serial_node"/> 
+
+</launch>

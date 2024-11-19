@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: decision_making
+Description: Description of decision_making
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -ldecision_making
+Requires: geometry_msgs nav_msgs roscpp rospy std_msgs message_runtime
