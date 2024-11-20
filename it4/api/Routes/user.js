@@ -18,7 +18,7 @@ userRouter.use(
   })
 );
 
-const genAI = new GoogleGenerativeAI("AIzaSyDE8sdawI9zb-eZVEPSHs4Z2QCjjxHvVh8");
+const genAI = new GoogleGenerativeAI("");
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 async function generateFollowUpQuestions(question, answer) {
